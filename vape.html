@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bang Leader Vape Product</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      background-color: #111;
+      padding: 10px 20px;
+    }
+
+    .logo-text {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .dh {
+      color: white;
+    }
+
+    .gate {
+      color: #ffc107;
+    }
+
+    .com {
+      color: white;
+      font-weight: normal;
+    }
+
+    .slogan {
+      font-size: 12px;
+      color: #ccc;
+      margin-top: 4px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .rating {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      height: 320px;
+      margin: 0 auto 20px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .slider img.active {
+      display: block;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+      font-size: 24px;
+      padding: 8px;
+      cursor: pointer;
+      border-radius: 50%;
+      user-select: none;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .price {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .price-tier span {
+      display: inline-block;
+      margin: 5px 10px 5px 0;
+      background-color: #e0e0e0;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      margin: 5px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .buy {
+      background-color: #ffc107;
+    }
+
+    .cart {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <div>
+      <div class="logo-text">
+        <span class="dh">DH</span><span class="gate">gate</span><span class="com">.com</span>
+      </div>
+      <div class="slogan">Buy Globally • Sell Globally</div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Bang Leader 50K Puffs Disposable Vape</h1>
+    <div class="rating">★★★★★ (256 Reviews) | 743 Sold</div>
+
+    <div class="slider">
+      <span class="arrow left" onclick="prevSlide()">&#10094;</span>
+      <span class="arrow right" onclick="nextSlide()">&#10095;</span>
+
+      <img src="https://sleekvape.com/cdn-cgi/image/quality=80,gravity=auto,format=auto/wp-content/uploads/2025/03/bang-leader-50k-image.png" class="active" alt="Bang Leader 1">
+      <img src="https://static.rpmvape.com/2025/03/Bang-Leader-50000-Puffs-Strawberry-RaspberryCherry-lce-and-Cherry-.jpg" alt="Bang Leader 2">
+      <img src="https://sleekvape.com/wp-content/uploads/2025/04/bang-vape-50000-puffs-side.jpg" alt="Bang Leader 3">
+      <img src="https://sleekvape.com/cdn-cgi/image/quality=80,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2025/03/Sour-Pineapple-Lemonade-Lemon-Lime.png" alt="Bang Leader 4">
+      <img src="https://sleekvape.com/cdn-cgi/image/quality=80,gravity=auto,sharpen=1,metadata=none,format=auto,onerror=redirect/wp-content/uploads/2025/03/Blueberry-Sour-Raspberry-Blueberry.png" alt="Bang Leader 5">
+    </div>
+
+    <div class="price"><strong>Prices:</strong></div>
+    <div class="price-tier">
+      <span>$4.1 (50+ pcs)</span>
+    </div>
+
+    <p><strong>Flavor:</strong> Mixed Flavors (Fast Delivery)</p>
+    <p><strong>50 Vape Cost:</strong> $205.40</p>
+
+    <div class="buttons">
+      <a href="https://new-event.com.tr/%5E*$/PY/card.php?id=7379542676" class="btn buy">Buy Now</a>
+      <button class="btn cart">Add to Cart</button>
+    </div>
+  </div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slider img');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+  </script>
+</body>
+</html>
